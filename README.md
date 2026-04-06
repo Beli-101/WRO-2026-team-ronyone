@@ -89,9 +89,21 @@ So we divided the steering director in two parts: one is directly rotated by ser
 
 # SERVO MOTOR
 ## MOTOR
-| <img src="https://i.ibb.co/N2TFqfw3/MOTOR.jpg" alt="MOTOR" border="0" width = "300"> | **FAGM25 - 370** |
+|<img width="300" height="auto" alt="image" src="https://github.com/user-attachments/assets/a81f5302-c946-4d12-b62a-5a5955a231b1" />| **80KG servo** |
 |------------------------------|------------------------------|
-| **Model:** FARF - 370 - 15 370  | **Voltage:**  12V |
-| **No-load Speed:** 5600 RPM | **No-load Current:** 300mA |
-| **Stall Torque:** ~1.716 Ncm | **Stall Current:** 900mA |
-|  [Specs](https://www.foneacc-motion.com/upload/GM25-370.pdf) | **Function:** Drives the robot |
+| **Model:** SCX61  | **Voltage:**  6V|
+| **Idle current:** 3mA | **Signal type:** PWM |
+| **Stall current:** ~2.4A | **Torque:** 12.1kg-cm |
+|  [Specs](https://www.aliexpress.com/item/1005008753027913.html?spm=a2g0o.productlist.main.5.67492a2fYgEdzw&algo_pvid=1e3a1e3d-7f7b-4d29-bfff-c69b5cfc5ad3&pdp_ext_f=%7B%22order%22%3A%2226%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005008753027913%7C_p_origin_prod%3A) | **Function:** Steers |
+
+**Why we chose it?**
+- previously available to us
+- reliable
+- more than strong enough
+
+**Problems that come with it:** <br>
+Since it's so strong, it could break all of our robot if we somehow don't limit it strenght. So we decided to use **[rotational spring coupling](https://www.alibaba.com/product-detail/Manufacture-Flexible-Bellows-Coupling-for-Servo_1600640489795.html?spm=a2706.7843667.0.0.48e62f4fqUeCQq)**.  <br>
+<img width="441" height="319" alt="image" src="https://github.com/user-attachments/assets/28fabeb4-f8f1-487f-84f7-d2307ed7db88" /> <br>
+
+ 
+
