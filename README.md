@@ -12,6 +12,8 @@
       - [ Wheels](#wheels)
   - [Steering](#steering)
     - [ Steering Servo Motor](#servo-motor)
+  - [Assembly](#assembly)
+  - [Assembled](#assembled)
    
 
 
@@ -102,8 +104,30 @@ So we divided the steering director in two parts: one is directly rotated by ser
 - more than strong enough
 
 **Problems that come with it:** <br>
-Since it's so strong, it could break all of our robot if we somehow don't limit it strenght. So we decided to use **[rotational spring coupling](https://www.alibaba.com/product-detail/Manufacture-Flexible-Bellows-Coupling-for-Servo_1600640489795.html?spm=a2706.7843667.0.0.48e62f4fqUeCQq)**.  <br>
+    Since it's so strong, it could break all of our robot if we somehow don't limit it strenght. So we decided to use **[rotational spring coupling](https://www.alibaba.com/product-    detail/Manufacture-Flexible-Bellows-Coupling-for-Servo_1600640489795.html?spm=a2706.7843667.0.0.48e62f4fqUeCQq)**.  <br>
 <img width="441" height="319" alt="image" src="https://github.com/user-attachments/assets/28fabeb4-f8f1-487f-84f7-d2307ed7db88" /> <br>
+
+## Assembly
+
+Both the drive and steering system, are pinned up up to the chasis using holders using M2 screws and bolts. 
+The chasis looks like this: <br>
+
+<img width="889" height="513" alt="image" src="https://github.com/user-attachments/assets/fb6e236f-05c9-4d1f-bc84-179bdb9aa9e7" /><br><br><br>
+
+The connectors look like this: <br>
+<img width="400" height="auto" alt="image" src="https://github.com/user-attachments/assets/7a2fa6f4-469e-48a5-b245-9096b4d34808" /><img width="400" height="auto" alt="image" src="https://github.com/user-attachments/assets/390a6180-dac5-4d56-bafe-66d271f32d36" /> <br><br><br>
+
+And here is everything:
+<img width="1024" height="685" alt="image" src="https://github.com/user-attachments/assets/390c21df-760b-4726-8e19-6f2d212bcc62" />
+
+
+
+
+## Assembled
+        pictures of robot really connected
+
+
+
 
  
 
