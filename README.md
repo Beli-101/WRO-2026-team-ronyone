@@ -19,6 +19,11 @@
 
 ## THE TEAM
 Our team is composed of three members David Beluhan, Gabriel Martinko, Vedran Barunčić and our mentour Rondald Galić. We have a goal of becoming true engineers but more importantly critical thinkers. Team has competed in WRO 2025, category future engineers (WRO Open in Ljubljana, Slovenia) and WRO 2024 Category future inovators (WRO Open in Brescia, Italia).
+
+        Vedran, age 16: programing
+        Gabriel, age 16: 3d design
+        David, age 15: 3d design
+
 ## CHALLENGE OVERVIEW
     DAVID
 ## OUR ROBOT
