@@ -8,8 +8,8 @@
 - [🚗 Our Robot](#our-robot)
 - [ 🤸 Mobility Management](#mobility-management)
     - [ Drive](#drive)
-    - [ Motor](#motor)
-    - [ Wheels](#wheels)
+      - [ Motor](#motor)
+      - [ Wheels](#wheels)
   - [Steering](#steering)
     - [ Steering Servo Motor](#servo-motor)
    
