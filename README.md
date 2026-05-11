@@ -44,8 +44,10 @@ Our team is composed of three members David Beluhan, Gabriel Martinko, Vedran Ba
 We have decided to move with RWD ( Rear Wheel Drive - https://en.wikipedia.org/wiki/Rear-wheel_drive) and 4 wheel steering. We considered using a differential, but through some calculations we concluded that the speed difference on wheels would be small enough to consider. However, in this challenge, we need sharp turns, so we decided to use 4 wheel steering to help with that. 
   ## DRIVE
 Considering the 4 wheel steering and RWD, we had to have one axle at which there is both steering and drive. We decided to solve that problem with a simple drive shaft (https://en.wikipedia.org/wiki/Drive_shaft). Ours looks like this: <br>
-<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/58afc38e-6018-4a47-986e-a928010394e5" /> <br>
-It consists of three parts: 
+<img src="https://i.ibb.co/LXT3N4Wj/RWD.jpg" width ="500" alt="RWD" border="0"> 
+<img src="https://i.ibb.co/v42KSBTy/RWD1.jpg"  width ="500" alt="RWD1" border="0"> <br>
+<img src="https://i.ibb.co/kVDDbpmZ/SHAFT.jpg"  width ="500" alt="SHAFT" border="0"><br>
+It consists of MULTIPLE parts: 
   1)  Wheel Shaft <br>
     <img src="https://i.ibb.co/cK3QTr6L/Wheel-shaft.jpg" alt="Wheel shaft" border="0" width = "400"><img src="https://i.ibb.co/qLV6D14g/dimensions-WHEEL.jpg" alt="dimensions-WHEEL" border="0" width = "400"> <br><br><br>
     
@@ -84,14 +86,26 @@ All the joints that are meant to be rotatible are 3mm in diamter, so that the M2
 - previously available to us
 - sufficient torque
 
+
+To hold the motor in the place, we designed this holder: <br>
+<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/49feaaf2-56ce-40dc-835a-b876552e5222" />
+<img src="https://i.ibb.co/JFwGzB99/Motor-HOLDER.jpg" width="500" alt="Motor-HOLDER" border="0">
+
   # WHEELS
   The wheels construction will go like this: on the 3d printed solid part we will mount the also 3d printed but ____ material which will grip with the board like a tire. <br> <br><br>
-  **REAR WHEEL**  <br>
+  **INNER SOLID REAR WHEEL**  <br>
   <img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/ed64a284-84f5-49f2-8a0a-aa9606ee626a" />
 
-  **FRONT WHEEL** <br>
+  **INNER SOLID FRONT WHEEL** <br>
   Front wheel is going to be a litlle different beacuse on the rear axle we have a bearing just before the wheel mounting so that the driveshaft and the wheel don+t wobble, but on the front axle, we don't have that so it is going to be on the wheel directly. The bearing is the same as the one on the rear axle.<br>
   <img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/9ff3bb99-2992-48de-bb26-f97a439a5bf0" /> <br>
+
+  **OUTER RUBER PART OF THE WHEEL**
+The first two parts shown are going to be solid, but that wouldn't be that great to go against the map, so we designed a outer part that is going to  be printed from the TPU material, and assembled to the inner parts. We aproximated that the friction coefficient would be around 0,8, and with that and the mass of the robot which we got from adding all the masses of components and calculating the volume of the 3d parts, multiplying by the material density, we got how much the frictin force would be, and it would be around 7,1N. That was also a comfirming factor of 2:1 ratio. <br>
+<img width="300" height="auto" alt="image" src="https://github.com/user-attachments/assets/44bb38aa-01d4-48dd-abfc-861428a9cb38" />
+<img src="https://i.ibb.co/kVG36SLB/OUTER-WHEEL.jpg" height = "500" alt="OUTER-WHEEL" border="0">
+
+
 
   
 
@@ -131,7 +145,17 @@ The chasis looks like this: <br>
 <img width="889" height="513" alt="image" src="https://github.com/user-attachments/assets/fb6e236f-05c9-4d1f-bc84-179bdb9aa9e7" /><br><br><br>
 
 The connectors look like this: <br>
-<img width="400" height="auto" alt="image" src="https://github.com/user-attachments/assets/7a2fa6f4-469e-48a5-b245-9096b4d34808" /><img width="400" height="auto" alt="image" src="https://github.com/user-attachments/assets/390a6180-dac5-4d56-bafe-66d271f32d36" /> <br><br><br>
+THE FRONT ONE: <br>
+
+<img width="400" height="auto" alt="image" src="https://github.com/user-attachments/assets/7a2fa6f4-469e-48a5-b245-9096b4d34808" /><img width="400" height="auto" alt="image" src="https://github.com/user-attachments/assets/390a6180-dac5-4d56-bafe-66d271f32d36" /> <br><br>
+
+THE REAR ONE: <br>
+
+This one had to be different because of the big gear which would get in the way. <br> 
+
+<img width="450" height="350" alt="image" src="https://github.com/user-attachments/assets/b3d4533c-e1ed-4fa5-b4d4-a8b27e9cd697" />
+<img src="https://i.ibb.co/WN5BjLx1/HOLDER-REAR.jpg" width="400" alt="HOLDER-REAR" border="0">
+
 
 And here is everything:
 <img width="1024" height="685" alt="image" src="https://github.com/user-attachments/assets/390c21df-760b-4726-8e19-6f2d212bcc62" />
