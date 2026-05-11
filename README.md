@@ -27,15 +27,15 @@ Our team is composed of three members David Beluhan, Gabriel Martinko, Vedran Ba
 ## CHALLENGE OVERVIEW
     DAVID
 ## OUR ROBOT
-| <img src="https://i.ibb.co/xqgqfV8L/TOP.jpg" width="300">         | <img src="https://i.ibb.co/yn2XmPpn/bottom.jpg" width="300">            |
+| <img src="https://i.ibb.co/DH3zMkSx/TOP.jpg" width = "300" alt="TOP" border="0">        | <img src="https://i.ibb.co/TDrsGHbn/BOTTOM.jpg" width = "300" alt="BOTTOM" border="0">            |
 |----------------------------------|-------------------------------------|
 | <p align="center"><b>Top</b></p> | <p align="center"><b>Bottom</b></p> |
 
-| <img src="https://i.ibb.co/qMhD2QHf/LEFT.jpg" width="300">          | <img src="https://i.ibb.co/21rjMJ7L/RIGHT.jpg" width="300">           |
+| <img src="https://i.ibb.co/7J2pV2mQ/LEFT.jpg" width = "300" alt="LEFT" border="0">          | <img src="https://i.ibb.co/JwDLg6Xy/RIGHT.jpg" width = "300" alt="RIGHT" border="0">           |
 |-----------------------------------|------------------------------------|
 | <p align="center"><b>Left</b></p> | <p align="center"><b>Right</b></p> |
 
-| <img src="https://i.ibb.co/zVz5sxQn/FRONT.jpg" width="300">           | <img src="https://i.ibb.co/hRNtB6P6/BACK.jpg" width="300">          |
+| <img src="https://i.ibb.co/40hCvp8/FORNT.jpg" width = "300" alt="FORNT" border="0">           | <img src="https://i.ibb.co/gLHNhjn7/BACK.jpg" width = "300" alt="BACK" border="0">         |
 |------------------------------------|-----------------------------------|
 | <p align="center"><b>Front</b></p> | <p align="center"><b>Back</b></p> |
 
@@ -54,6 +54,17 @@ It consists of three parts:
    
  3) Cube <br>
     <img src="https://i.ibb.co/N6RzhjYf/BCUBE.jpg" alt="BCUBE" border="0" width = "150"><img src="https://i.ibb.co/Y7t9SZdD/BCUBE1.jpg" alt="BCUBE1" border="0" width = "350"> <br><br><br>
+
+Also, important is that we have two bewel gears in ratio 2:1 (wheel:motor), from which we get more speed. Considering that we have 256RPM on our motor, we will have 512RPM on the output, which results in the speed of around 9km/h after some calculations. 
+Here are the gears:
+<br>
+<img src="https://i.ibb.co/vxqK6ckR/GEARS.jpg" alt="GEARS" border="0">
+<br>
+Small gear: <br>
+<img src="https://i.ibb.co/FbHXYSww/MALI-GEAR.jpg" alt="MALI-GEAR" border="0">
+<br><br><br>
+Big gear: <br>
+<img src="https://i.ibb.co/qMP9MzGg/GEAR-BIG.jpg"  alt="GEAR-BIG" border="0">
 
 After finishing the drive shaft we added steer bearings, as we call them. WE designed them so that we can place a bought ball bearing ( THIS ONE: https://www.zjhoto.com/product-706ac-6x17x6mm-miniature-angular-contact-ball-bearing ) so that the drive shaft doesn't wobble in it's hole. They also have a little hook added on them which are used to steer. The steer bearing  looks like this: <br>
 <img src="https://i.ibb.co/6Kx5W10/SB.jpg" alt="SB" border="0" width = "350"><img src="https://i.ibb.co/9HXzdT7Q/SA.jpg" alt="SA" border="0" width = "350"> <br> <br><br>
