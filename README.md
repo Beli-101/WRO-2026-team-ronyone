@@ -133,9 +133,7 @@ So we divided the steering director in two parts: one is directly rotated by ser
 - reliable
 - more than strong enough
 
-**Problems that come with it:** <br>
-    Since it's so strong, it could break all of our robot if we somehow don't limit it strenght. So we decided to use **[rotational spring coupling](https://www.alibaba.com/product-    detail/Manufacture-Flexible-Bellows-Coupling-for-Servo_1600640489795.html?spm=a2706.7843667.0.0.48e62f4fqUeCQq)**.  <br>
-<img width="441" height="319" alt="image" src="https://github.com/user-attachments/assets/28fabeb4-f8f1-487f-84f7-d2307ed7db88" /> <br>
+
 
 ## Assembly
 
