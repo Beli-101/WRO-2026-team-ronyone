@@ -25,7 +25,10 @@ Our team is composed of three members David Beluhan, Gabriel Martinko, Vedran Ba
         David, age 15: 3d design
 
 ## CHALLENGE OVERVIEW
-    DAVID
+
+The goal of the Future Engineers WRO category is to design a fully autonomous vehicle that completes two different challenges in 3 minutes. The direction of the vehicles movement, position of the interior walls and their size in both challenges is randomized before the start of the round, so the vehicle should 
+recognize whether to turn left or right by itself. This is our playfield:
+<img width="1316" height="764" alt="image" src="https://github.com/user-attachments/assets/6487d5d0-3245-413a-9d87-16ab59b773b3" />
 ## OUR ROBOT
 | <img src="https://i.ibb.co/DH3zMkSx/TOP.jpg" width = "300" alt="TOP" border="0">        | <img src="https://i.ibb.co/TDrsGHbn/BOTTOM.jpg" width = "300" alt="BOTTOM" border="0">            |
 |----------------------------------|-------------------------------------|
