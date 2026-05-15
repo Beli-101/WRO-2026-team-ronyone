@@ -18,19 +18,78 @@
 
 
 ## THE TEAM
-Our team is composed of three members David Beluhan, Gabriel Martinko, Vedran Barunčić and our mentour Rondald Galić. We have a goal of becoming true engineers but more importantly critical thinkers. Team has competed in WRO 2025, category future engineers (WRO Open in Ljubljana, Slovenia) and WRO 2024 Category future inovators (WRO Open in Brescia, Italia).
+Our team is composed of three members David Beluhan, Gabriel Martinko, Vedran Barunčić and our mentor Rondald Galić. We have a goal of becoming true engineers but more importantly critical thinkers. The team has competed in WRO 2025, in the Future Engineers category (WRO Open in Ljubljana, Slovenia) and WRO 2024 in Future Innovators (WRO Open in Brescia, Italy).
 
-        Vedran, age 16: programing
+        Vedran, age 16: programming
         Gabriel, age 16: 3d design
         David, age 15: 3d design
 
 ## CHALLENGE OVERVIEW
 
-The goal of the Future Engineers WRO category is to design a fully autonomous vehicle that completes two different challenges in 3 minutes. The direction of the vehicles movement, position of the interior walls and their size in both challenges is randomized before the start of the round, so the vehicle should 
-recognize whether to turn left or right by itself. This is our playfield:
+This is the game mat which we are gonna do all the challenges on:
 <img width="1316" height="764" alt="image" src="https://github.com/user-attachments/assets/6487d5d0-3245-413a-9d87-16ab59b773b3" />
 OPEN CHALLENGE
+For the open challenge, the robot just needs to do 3 laps around the map, and finish in the finishing zone.
+
 OBSTACLE CHALLENGE
+The obstacle challenge is a little bit more complicated. Esentially it has the same form as the open challenge, meaning that the robot still needs to do 3 laps around the map but now there are red and green pillars placed randomly on the map, if it is a red pillar the robot should go right around it, and if it is a green pillar it should go left around it. At the end of the 3 laps, the robot has a designated parking spot that you can see is colored pink, in the space the robot needs to parallel park.
+
+## Software Development Environment
+
+For efficiency, the software development was separated from the mechanical build. While the mechanical team worked on the physical robot, the software was developed and tested in Webots by Cyberbotics — an open source robot simulation application that provides a complete environment to model, program and simulate robots.
+
+The first step was creating a new world in Webots, importing the WRO Future Engineers map scaled to real dimensions, and adding all track elements: pillars, parking space walls, outer walls and inner walls. This allowed full simulation testing without needing the physical robot.
+
+The robot itself was initially built with standard differential drive, but we quickly realized there was no clean way to implement steering - only by creating speed differences between left and right wheels. This led us to rebuild the entire robot using the AckermannVehicle node, which is a dedicated module for Ackermann steering geometry. After inputting the correct physical dimensions and adding all sensors, we began testing.
+
+### Sensors Used
+| Sensor                      | Implementation                        | Purpose                            |
+| --------------------------- | ------------------------------------- | ---------------------------------- |
+| Camera “color sensor”       | 1×1 camera, RGB read                  | Detects blue/orange lines on track |
+| Camera                      | Standard detection camera             | Detects red/green pillars on track |
+| Front distance sensor       | Standard distance sensor              | Wall proximity during turns        |
+| Front-left distance sensor  | Standard distance sensor              | Inner wall clearance (left turns)  |
+| Front-right distance sensor | Standard distance sensor              | Inner wall clearance (right turns) |
+| IMU                         | Inertial measurement unit             | Yaw tracking for turn control      |
+| Front camera                | Camera (obstacle challenge)           | Pillar detection and avoidance     |
+| Side sensors                | Distance sensors (obstacle challenge) | Lateral positioning                |
+| Rear sensor                 | Distance sensor (obstacle challenge)  | Parking and reversing              |
+
+
+Since no dedicated color sensor node exists in Webots, a camera was used with resolution set to 1×1 pixels. Each frame, the red, green and blue channel values are read directly and classified by threshold ranges.
+
+### Open Challenge - Control Logic
+The open challenge controller runs a state machine with three mutually exclusive phases: turning, straightening, and cruising.
+Color Detection
+The 1×1 camera captures one pixel per timestep. The RGB values are compared against tuned threshold ranges to classify the floor color:
+```python
+if   40 < r < 80  and 50 < g < 90  and 100 < b < 150: detected = "blue"
+elif 140 < r < 200 and 70 < g < 120 and 30 < b < 80:  detected = "orange"
+else:                                                   detected = None
+```
+Blue indicates a left turn, orange a right turn. The first detected color also sets the direction for all subsequent turns in that run.
+
+### State Machine
+Cruising is the default state. While cruising, the robot continuously compares its current IMU yaw against the nearest 90° increment and applies a small fixed steering correction if the heading error exceeds 1.5°. This prevents small angular errors from accumulating over multiple laps.
+Turning is triggered when a color line is detected. The turn direction is locked to the first color seen at the start of the run. Rather than targeting an absolute yaw angle which breaks at the 270°→360° boundary, the controller measures how many degrees have been rotated since the turn started:
+```python
+diff = angle_diff(yaw, turn_start_yaw)
+turned_so_far = diff      # blue (left)
+turned_so_far = -diff     # orange (right)
+```
+The turn completes after 87° of rotation, leaving a small margin to account for mechanical overshoot. During the turn, speed is dynamically adjusted based on front distance sensor readings to maintain safe wall clearance.
+Straightening activates immediately after a turn finishes. The controller snaps to the nearest 90° heading as a target and applies a fixed ±0.15 radian steering correction until the heading error falls within 1.5°, at which point the wheels return to center.
+
+Each time a color line triggers a turn, a counter increments. On a square track with one line per corner, three full laps equal 12 turns. On the 12th detection, the robot completes its final turn, drives forward a fixed number of steps to return to the starting position, then stops.
+
+The controller runs at a 2ms timestep, giving approximately 500 control loop iterations per second. This is critical for reliable color detection at speed — at higher timesteps the robot can drive past the color strip between two consecutive camera reads.
+
+Occasional missed detection at start: At simulation startup the color sensor sometimes fails to detect the first line, causing the robot to drive straight through it. We believe this is a simulation artifact related to sensor initialization timing and expect it to be less of an issue on the physical robot cycle times. If it persists, the controller loop will be further optimized.
+
+A demonstration video of the Open Challenge simulation in Webots can be viewed here:
+
+[Open Challenge Simulation Video](LINK_HERE)
+
 ## OUR ROBOT
 | <img src="https://i.ibb.co/DH3zMkSx/TOP.jpg" width = "300" alt="TOP" border="0">        | <img src="https://i.ibb.co/TDrsGHbn/BOTTOM.jpg" width = "300" alt="BOTTOM" border="0">            |
 |----------------------------------|-------------------------------------|
