@@ -217,21 +217,25 @@ So we divided the steering director in two parts: one is directly rotated by ser
 - reliable
 - more than strong enough
 
-CABLE MANAGMENT
+## CABLE MANAGMENT
 
 At WRO 2025, our cable management system was a disaster, so this year we decided to take the situation seriously. We built custom component holders in which we built holes and tunnels specifically for the wires. Some of our holders have multiple holes so we can chose in what direction will wires go after the robot is put together.
 
 TOF SENSOR HOLDERS
 
-slika i shema bočnog redo redo
+![image alt](https://github.com/Beli-101/WRO-2026-team-ronyone/blob/28cd24ada1a9c197e4221296c02d45db61c9cea9/Snimka%20zaslona%202026-05-17%20224629.png)
+
+![image alt](https://github.com/Beli-101/WRO-2026-team-ronyone/blob/28cd24ada1a9c197e4221296c02d45db61c9cea9/Snimka%20zaslona%202026-05-17%20225234.png)
 
 FRONT SENSOR HOLDER
 
-slika
+![image alt](https://github.com/Beli-101/WRO-2026-team-ronyone/blob/28cd24ada1a9c197e4221296c02d45db61c9cea9/Snimka%20zaslona%202026-05-17%20231256.png)
+![image alt](https://github.com/Beli-101/WRO-2026-team-ronyone/blob/28cd24ada1a9c197e4221296c02d45db61c9cea9/Snimka%20zaslona%202026-05-17%20231800.png)
 
 REAR SENSOR HOLDER
 
-slika
+![image alt](https://github.com/Beli-101/WRO-2026-team-ronyone/blob/28cd24ada1a9c197e4221296c02d45db61c9cea9/Snimka%20zaslona%202026-05-17%20232541.png)
+![image alt](https://github.com/Beli-101/WRO-2026-team-ronyone/blob/28cd24ada1a9c197e4221296c02d45db61c9cea9/Snimka%20zaslona%202026-05-17%20232630.png)
 
 ## Assembly
 
