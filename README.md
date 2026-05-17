@@ -175,12 +175,33 @@ The first two parts shown are going to be solid, but that wouldn't be that great
 
   
 # STEERING
-4 wheel steering means we needed an inversion so that axles dont rotate in the sam direction. If we want to go left, the front axle has to be rotated to the left, but the rear one to the right. <br> <br><br>
-<img width="211" height="239" alt="image" src="https://github.com/user-attachments/assets/704e4da2-3cc6-464a-9c23-45412d262ccc" /> <br><br>
+4 wheel steering means we needed an inversion so that axles dont rotate in the sam direction. If we want to go left, the front axle has to be rotated to the left, but the rear one to the right. The steering looks like this: It is located on the bottom side of our platform. <br> <br><br>
+<img width="600" height="auto" alt="image" src="https://github.com/user-attachments/assets/276e3e46-2402-4e85-a217-cde5082950bf" /><br><br>
+The steering consists of 4 parts: Steering gear, inverted steering gear, pivot arms and wheel holders.
 So we divided the steering director in two parts: one is directly rotated by servo and the other is rotated by the first one. Looks like this:   <br><br><br>
-<img width="auto" height="400" alt="image" src="https://github.com/user-attachments/assets/52fd59a3-9922-47e7-bf1f-5ceae020cab0" /><br><br>
 
-<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/eb31abc1-52cb-40bd-b318-4898f92b25d3" /><img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/0d65e26b-cdd5-498c-ac57-4efdd1682714" />  <br><br><br>
+1) Directly rotated from the servo:
+<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/cd29f1ac-2637-4d43-b23f-21d6900ce462" />
+<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/85b0024d-7c4f-401b-8c9d-5838327bea27" />
+
+
+
+<BR><BR>2) Inverted steering gear - rotated by the other gear: <br><br>
+<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/9e225be0-8779-4444-a28e-d81e07784279" />
+<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/14c98177-caf1-4695-bd81-7167c03be7dd" /> <br>
+
+
+<BR><BR>3) Pivot arm: <br><br>
+<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/ffd7d335-a67a-48a8-b632-42cbbdbc6e3b" />
+<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/b6f3975d-c45a-45a1-8927-2fdde67cae5b" />
+
+<BR><BR>4) Wheel Holders: <br><br>
+<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/06c7255b-267a-461f-8961-04fc03054cb5" />
+<img width="500" height="auto" alt="image" src="https://github.com/user-attachments/assets/ea1b5dd9-99b8-42d0-ab26-b73b7d1888d5" />
+
+
+
+
 
 
 # SERVO MOTOR
