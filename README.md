@@ -87,9 +87,7 @@ The controller runs at a 2ms timestep, giving approximately 500 control loop ite
 
 Occasional missed detection at start: At simulation startup the color sensor sometimes fails to detect the first line, causing the robot to drive straight through it. We believe this is a simulation artifact related to sensor initialization timing and expect it to be less of an issue on the physical robot cycle times. If it persists, the controller loop will be further optimized.
 
-A demonstration video of the Open Challenge simulation in Webots can be viewed here:
-
-[Open Challenge Simulation Video](LINK_HERE)
+A demonstration video of the Open Challenge simulation in Webots can be viewed [here](Videos/Open_challenge_simulation.mp4)
 
 ## OUR ROBOT
 | <img src="https://i.ibb.co/DH3zMkSx/TOP.jpg" width = "300" alt="TOP" border="0">        | <img src="https://i.ibb.co/TDrsGHbn/BOTTOM.jpg" width = "300" alt="BOTTOM" border="0">            |
