@@ -5,6 +5,7 @@
 
 - [👤👤👤 About the team](#the-team)
 - [⚔️ Challenge Overview](#challenge-overview)
+- [⚔️ Software Development Environment](#software-development-environment) 
 - [🚗 Our Robot](#our-robot)
 - [ 🤸 Mobility Management](#mobility-management)
     - [ Drive](#drive)
