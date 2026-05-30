@@ -258,7 +258,8 @@ This one had to be different because of the big gear which would get in the way.
 
 
 And here is everything:
-<img width="1024" height="685" alt="image" src="https://github.com/user-attachments/assets/390c21df-760b-4726-8e19-6f2d212bcc62" />
+<img width="959" height="646" alt="image" src="https://github.com/user-attachments/assets/07b6680d-8010-4d61-9aaf-3e61009d5149" />
+
 
 
 
