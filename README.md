@@ -90,15 +90,15 @@ Occasional missed detection at start: At simulation startup the color sensor som
 A demonstration video of the Open Challenge simulation in Webots can be viewed [here](Videos/Open_challenge_simulation.mp4)
 
 ## OUR ROBOT
-| <img src="https://i.ibb.co/DH3zMkSx/TOP.jpg" width = "300" alt="TOP" border="0">        | <img src="https://i.ibb.co/TDrsGHbn/BOTTOM.jpg" width = "300" alt="BOTTOM" border="0">            |
+| <img src="https://i.ibb.co/XkGtHnMw/TOP.jpg" width = "300" alt="TOP" border="0">        | <img src="https://i.ibb.co/QFCK8c16/BOTTOM.jpg" width = "300" alt="BOTTOM" border="0">            |
 |----------------------------------|-------------------------------------|
 | <p align="center"><b>Top</b></p> | <p align="center"><b>Bottom</b></p> |
 
-| <img src="https://i.ibb.co/7J2pV2mQ/LEFT.jpg" width = "300" alt="LEFT" border="0">          | <img src="https://i.ibb.co/JwDLg6Xy/RIGHT.jpg" width = "300" alt="RIGHT" border="0">           |
+| <img src="https://i.ibb.co/TqtzGBxc/LEFT.jpg" width = "300" alt="LEFT" border="0">          | <img src="https://i.ibb.co/QFJQnPt8/RIGHT.jpg" width = "300" alt="RIGHT" border="0">           |
 |-----------------------------------|------------------------------------|
 | <p align="center"><b>Left</b></p> | <p align="center"><b>Right</b></p> |
 
-| <img src="https://i.ibb.co/40hCvp8/FORNT.jpg" width = "300" alt="FORNT" border="0">           | <img src="https://i.ibb.co/gLHNhjn7/BACK.jpg" width = "300" alt="BACK" border="0">         |
+| <img src="https://i.ibb.co/0RGy65zX/FRONT.jpg" width = "300" alt="FORNT" border="0">           | <img src="https://i.ibb.co/hTg7J2P/BACK.jpg" width = "300" alt="BACK" border="0">         |
 |------------------------------------|-----------------------------------|
 | <p align="center"><b>Front</b></p> | <p align="center"><b>Back</b></p> |
 
