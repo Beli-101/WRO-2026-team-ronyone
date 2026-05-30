@@ -1,0 +1,538 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/RectangleArena.proto"
+IMPORTABLE EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/road/protos/RoadPillars.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/vehicles/protos/abstract/AckermannVehicle.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/vehicles/protos/abstract/VehicleWheel.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.5347272539077811 -0.5749216936594239 -0.6192994510638797 4.200247228088617
+  position 0.38157168816442316 -0.6272548567412488 7.519759012075456
+}
+TexturedBackground {
+  texture "empty_office"
+}
+TexturedBackgroundLight {
+  texture "noon_cloudy_empty"
+  castShadows FALSE
+}
+RectangleArena {
+  translation 0 0 0.01
+  floorSize 3 3
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "../textures/FE_map_#2.png"
+      ]
+      repeatS FALSE
+      repeatT FALSE
+    }
+    roughnessMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/textures/parquetry/chequered_parquetry_roughness.jpg"
+      ]
+    }
+    metalness 0
+    normalMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/textures/parquetry/chequered_parquetry_normal.jpg"
+      ]
+    }
+    normalMapFactor 0
+    occlusionMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/textures/parquetry/chequered_parquetry_occlusion.jpg"
+      ]
+    }
+    textureTransform TextureTransform {
+      scale 0.166 0.166
+    }
+  }
+  wallAppearance BrushedAluminium {
+    colorOverride 0 0 0
+  }
+}
+SolidBox {
+  translation -2.576 -0.175 0.05
+  rotation 0 0 1 1.5708
+  name "box(11)"
+  size 1.32 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.45 0.00999641 0.06
+  rotation 9.58976e-09 9.58979e-09 -1 -1.5707953071795862
+  name "box(15)"
+  size 0.95 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0.45 0.00999551 0.06
+  rotation 9.58976e-09 9.58979e-09 -1 -1.5707953071795862
+  name "box(16)"
+  size 0.95 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -3.49 -0.81 0.05
+  name "box(12)"
+  size 1.31 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -3.46 0.46 0.05
+  rotation 0 0 1 1.01503e-06
+  name "box(13)"
+  size 1.32 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -5.15213e-15 0.46 0.06
+  rotation 0 0 1 1.01503e-06
+  name "box(10)"
+  size 0.95 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 9.13503e-07 -0.44 0.06
+  rotation 0 0 1 1.01503e-06
+  name "box(17)"
+  size 0.95 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -2.9 -0.18 0.05
+  rotation 0 0 1 -1.5707953071795862
+  name "box(14)"
+  size 1.31 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0 0 0
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.83 -2.01 0.05
+  name "box(9)"
+  size 0.02 0.2 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 1
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.69 -2.01 0.05
+  name "box(8)"
+  size 0.02 0.2 0.1
+  appearance PBRAppearance {
+    baseColor 1 0 1
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.39 -1.87 0.05
+  name "box(7)"
+  size 0.05 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0.933 0.153 0.216
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.39 -2.01 0.05
+  name "box(6)"
+  size 0.05 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0.933 0.153 0.216
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.29 -1.88 0.05
+  name "box(5)"
+  size 0.05 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0.933 0.153 0.216
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.29 -2.01 0.05
+  name "box(4)"
+  size 0.05 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0.933 0.153 0.216
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.13 -1.86 0.05
+  name "box(3)"
+  size 0.05 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0.267 0.839 0.173
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation -0.13 -2.01 0.05
+  name "box(2)"
+  size 0.05 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0.267 0.839 0.173
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0 -1.86 0.05
+  name "box(1)"
+  size 0.05 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0.267 0.839 0.173
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+SolidBox {
+  translation 0 -2.01 0.05
+  size 0.05 0.05 0.1
+  appearance PBRAppearance {
+    baseColor 0.267 0.839 0.173
+    baseColorMap ImageTexture {
+      url [
+        ""
+      ]
+    }
+    roughness 0.5
+    metalness 0
+  }
+}
+AckermannVehicle {
+  translation -0.105342 1.22796 0.0545642
+  rotation -3.608910157438706e-05 -4.9496105663400564e-05 0.9999999981238561 3.141309796855655
+  controller "WRO_controller"
+  trackFront 0.115
+  trackRear 0.115
+  wheelbase 0.215
+  maxSteeringAngle 30
+  extensionSlot [
+    DistanceSensor {
+      translation 0.22 0 0
+      name "front"
+      boundingObject Box {
+        size 0.01 0.03 0.02
+      }
+      lookupTable [
+        0 0 0
+        0.6 60 0
+      ]
+    }
+    InertialUnit {
+      translation 0.11 0 0.02
+      name "IMU"
+      boundingObject Box {
+        size 0.05 0.03 0.01
+      }
+    }
+    DistanceSensor {
+      translation 0.16 -0.05 0
+      rotation 0 0 1 -1.5707953071795862
+      name "front_right"
+      boundingObject Box {
+        size 0.01 0.03 0.02
+      }
+      lookupTable [
+        0 0 0
+        0.6 60 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.05 -0.05 0
+      rotation 0 0 1 -1.5707953071795862
+      name "back_right"
+      boundingObject Box {
+        size 0.01 0.03 0.02
+      }
+      lookupTable [
+        0 0 0
+        0.6 60 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.05 0.0500002 0
+      rotation 0 0 1 1.5708
+      name "back_left"
+      boundingObject Box {
+        size 0.01 0.03 0.02
+      }
+      lookupTable [
+        0 0 0
+        0.6 60 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.16 0.05 0
+      rotation 0 0 1 1.5708
+      name "front_left"
+      boundingObject Box {
+        size 0.01 0.03 0.02
+      }
+      lookupTable [
+        0 0 0
+        0.6 60 0
+      ]
+      type "laser"
+    }
+    Camera {
+      translation 0.16 0.01 -0.03
+      rotation 0 1 0 1.5708
+      name "colorcamera"
+      boundingObject Box {
+        size 0.01 0.01 0.01
+      }
+      fieldOfView 0.01
+      width 1
+      height 1
+    }
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.05 0.093 0.05
+      }
+    }
+  ]
+  boundingObject Pose {
+    translation 0.11 0 0
+    children [
+      Box {
+        size 0.2165 0.1 0.05
+      }
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 1.5
+  }
+  wheelFrontRight VehicleWheel {
+    name "front right wheel"
+    thickness 0.025
+    tireRadius 0.045
+    subdivision 24
+    curvatureFactor 0.3
+    rimRadius 0.02
+    rimBeamNumber 6
+    rimBeamWidth 0.004
+    centralInnerRadius 0.005
+    centralOuterRadius 0.012
+    rimBeamThickness 0.003
+    rimBeamOffset 0
+    contactMaterial "rubber"
+  }
+  wheelFrontLeft VehicleWheel {
+    name "front left wheel"
+    thickness 0.025
+    tireRadius 0.045
+    subdivision 24
+    curvatureFactor 0.3
+    rimRadius 0.02
+    rimBeamNumber 6
+    rimBeamWidth 0.004
+    centralInnerRadius 0.005
+    centralOuterRadius 0.012
+    rimBeamThickness 0.003
+    rimBeamOffset 0
+    contactMaterial "rubber"
+    wheelSide TRUE
+  }
+  wheelRearRight VehicleWheel {
+    name "rear right wheel"
+    thickness 0.025
+    tireRadius 0.045
+    subdivision 24
+    curvatureFactor 0.3
+    rimRadius 0.02
+    rimBeamNumber 6
+    rimBeamWidth 0.004
+    centralInnerRadius 0.005
+    centralOuterRadius 0.012
+    rimBeamThickness 0.003
+    rimBeamOffset 0
+    contactMaterial "rubber"
+  }
+  wheelRearLeft VehicleWheel {
+    name "rear left wheel"
+    thickness 0.025
+    tireRadius 0.045
+    subdivision 24
+    curvatureFactor 0.3
+    rimRadius 0.02
+    rimBeamNumber 6
+    rimBeamWidth 0.004
+    centralInnerRadius 0.005
+    centralOuterRadius 0.012
+    rimBeamThickness 0.003
+    rimBeamOffset 0
+    contactMaterial "rubber"
+    wheelSide TRUE
+  }
+  axisDevicesFrontRight [
+    RotationalMotor {
+      name "frontright"
+      acceleration 150
+      maxVelocity 60
+      maxTorque 150
+    }
+  ]
+  axisDevicesFrontLeft [
+    RotationalMotor {
+      name "frontleft"
+      acceleration 150
+      maxVelocity 60
+      maxTorque 150
+    }
+  ]
+  axisDevicesRearRight [
+    RotationalMotor {
+      name "rearright"
+      acceleration 150
+      maxVelocity 60
+      maxTorque 150
+    }
+  ]
+  axisDevicesRearLeft [
+    RotationalMotor {
+      name "rearleft"
+      acceleration 150
+      maxVelocity 60
+      maxTorque 150
+    }
+  ]
+}
