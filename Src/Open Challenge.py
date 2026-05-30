@@ -96,8 +96,8 @@ def trigger_turn(color, current_yaw):
     set_speed(TURN_SPEED)
     return True
 
-left_steer.setPosition(0, 0)
-right_steer.setPosition(0, 0)
+left_steer.setPosition(0.0)
+right_steer.setPosition(0.0)
 
 turning = False
 straightening = False
